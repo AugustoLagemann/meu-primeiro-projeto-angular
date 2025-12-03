@@ -1,0 +1,31 @@
+<section class="carrinho">
+
+  <h2>🛒 Meu Carrinho</h2>
+
+  <ul class="lista-carrinho">
+
+    <li *ngFor="let item of itensCarrinho; let i = index" class="linha">
+
+      <img [src]="item.imagem" class="foto" alt="{{ item.nome }}">
+
+      <div class="detalhes">
+        <h3>{{ item.nome }}</h3>
+        <p>Preço: {{ item.preco | currency:'BRL' }}</p>
+        <p>Quantidade: {{ item.quantidade }}</p>
+      </div>
+
+      <button class="btn-remover" (click)="remover(i)">
+        Remover
+      </button>
+
+    </li>
+
+  </ul>
+
+  <h3>Total: {{ total | currency:'BRL' }}</h3>
+
+  <button (click)="finalizarCompra()">
+    Finalizar Compra ✔️
+  </button>
+
+</section>

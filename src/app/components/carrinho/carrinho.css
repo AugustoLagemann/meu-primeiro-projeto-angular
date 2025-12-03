@@ -1,0 +1,59 @@
+.carrinho {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lista-carrinho {
+  list-style: none;
+  padding: 0;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.foto {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.detalhes h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.detalhes p {
+  margin-top: 2px;
+}
+
+.btn-remover {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.finalizar {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.btn-finalizar {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+.footer {
+  background: #232f3e;
+  color: #fff;
+  padding: 40px 0 20px;
+  margin-top: 60px;
+}
+
+.container {
+  max-width: 1800px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.section {
+  flex: 1;
+  min-width: 260px;
+}
+
+.section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffa726;
+}
+
+.section p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.copy {
+  margin-top: 30px;
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+}

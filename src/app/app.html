@@ -1,0 +1,19 @@
+<header class="topo">
+
+  <nav class="menu">
+
+    <button (click)="navegarHome()">
+      🏠 Home
+    </button>
+
+    <button (click)="navegarCarrinho()">
+      🛒 Carrinho <span class="badge">{{ quantidadeCarrinho }}</span>
+    </button>
+
+  </nav>
+
+</header>
+
+<main class="conteudo">
+  <router-outlet></router-outlet>
+</main>

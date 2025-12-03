@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Plantas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Loja de Plantas</h1>
+
+    <div class="cart-area">
+        🛒 <span id="cart-count">0</span>
+        <button id="btn-carrinho">Ir para o Carrinho</button>
+    </div>
+</header>
+
+<section class="products">
+
+    <div class="card">
+        <div class="img-container">
+            <img class="planta" data-id="1" src="https://i.etsystatic.com/26749119/r/il/b0e0a3/2939937883/il_570xN.2939937883_d9xj.jpg">
+            <button class="saber-mais" onclick="mostrarDescricao(1)">Saber mais</button>
+        </div>
+
+        <h3>Suculenta Minimalista</h3>
+        <p>R$ 19,90</p>
+        <p id="desc-1" class="descricao"></p>
+
+        <button onclick="addToCart('Suculenta Minimalista', 19.90)">Adicionar</button>
+    </div>
+
+
+    <div class="card">
+        <div class="img-container">
+            <img class="planta" data-id="2" src="https://d2byg56fbf6u3p.cloudfront.net/968/imagens/1465164164654baffa4dc1f7.02919469.1699459066_l.jpeg">
+            <button class="saber-mais" onclick="mostrarDescricao(2)">Saber mais</button>
+        </div>
+
+        <h3>Cacto Decorativo</h3>
+        <p>R$ 24,90</p>
+        <p id="desc-2" class="descricao"></p>
+
+        <button onclick="addToCart('Cacto Decorativo', 24.90)">Adicionar</button>
+    </div>
+
+
+    <div class="card">
+        <div class="img-container">
+            <img class="planta" data-id="3" src="https://thumbs.dreamstime.com/b/planta-verde-de-sereno-em-um-toque-m%C3%ADnimo-vaso-branco-para-natureza-moderna-simplicidade-elegante-uma-%C3%BAnica-prospera-365110404.jpg">
+            <button class="saber-mais" onclick="mostrarDescricao(3)">Saber mais</button>
+        </div>
+
+        <h3>Planta Verde Moderna</h3>
+        <p>R$ 34,90</p>
+        <p id="desc-3" class="descricao"></p>
+
+        <button onclick="addToCart('Planta Verde Moderna', 34.90)">Adicionar</button>
+    </div>
+
+
+    <div class="card">
+        <div class="img-container">
+            <img class="planta" data-id="4" src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600">
+            <button class="saber-mais" onclick="mostrarDescricao(4)">Saber mais</button>
+        </div>
+
+        <h3>Planta em Vaso Simples</h3>
+        <p>R$ 29,90</p>
+        <p id="desc-4" class="descricao"></p>
+
+        <button onclick="addToCart('Planta em Vaso Simples', 29.90)">Adicionar</button>
+    </div>
+
+</section>
+
+
+<!-- SOBRE NÓS -->
+<section class="sobre-nos">
+    <h2>Sobre Nós</h2>
+    <p>
+        A Loja de Plantas nasce do amor pela natureza e pela ideia de trazer mais vida, cor e paz para dentro dos lares.  
+        Trabalhamos com plantas selecionadas, escolhidas com carinho para transformar qualquer ambiente em um espaço mais leve e aconchegante.  
+        Nosso compromisso é oferecer qualidade, beleza e a certeza de que cada planta carregará um pouco da nossa dedicação até você.
+    </p>
+
+    <h3>Contato</h3>
+    <p>Endereço: Rua das Palmeiras, 145 - Jardim Verde, São Paulo - SP</p>
+    <p>Telefone: (11) 98562-4471</p>
+    <p>Email: contato@lojadeplantas.com.br</p>
+</section>
+
+
+
+<!-- MODAL DO CARRINHO -->
+<div id="modal-carrinho" class="modal">
+    <div class="modal-content">
+        <h2>Carrinho</h2>
+
+        <ul id="lista-carrinho"></ul>
+
+        <h3>Total: R$ <span id="total"></span></h3>
+
+        <button onclick="comprar()">Comprar</button>
+
+        <button onclick="fecharCarrinho()">Fechar</button>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

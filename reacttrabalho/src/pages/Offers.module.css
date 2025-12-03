@@ -1,0 +1,61 @@
+/* GRID IGUAL AO DA HOME */
+.ofertasGrid {
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* CARD IGUAL AO DA HOME */
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  padding: 16px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGEM */
+.img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* PREÇO ANTIGO */
+.oldPrice {
+  color: #777;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+/* PREÇO NOVO */
+.newPrice {
+  color: #e60000;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* BOTÃO */
+.btn {
+  width: 100%;
+  background: #2b8eff;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #1f6ed1;
+}

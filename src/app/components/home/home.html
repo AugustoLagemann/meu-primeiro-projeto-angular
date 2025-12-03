@@ -1,0 +1,29 @@
+<section class="home">
+
+  <h2>{{ titulo }}</h2>
+
+  <button class="btn-carrinho" (click)="irParaCarrinho()">
+    Ir para o Carrinho 🛒
+  </button>
+
+  <ul class="lista-produtos">
+
+    <li *ngFor="let p of produtos" class="produto">
+
+      <div class="info">
+        <img [src]="p.imagem" class="foto" alt="{{ p.nome }}">
+        <div>
+          <h3>{{ p.nome }}</h3>
+          <p>{{ p.preco | currency:'BRL' }}</p>
+        </div>
+      </div>
+
+      <button class="btn-add" (click)="adicionarAoCarrinho(p)">
+        Adicionar ao Carrinho
+      </button>
+
+    </li>
+
+  </ul>
+
+</section>

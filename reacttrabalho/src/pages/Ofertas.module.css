@@ -1,0 +1,75 @@
+/* GRID PRINCIPAL — mesmo da Home */
+.grid {
+  width: 100%;
+  max-width: 1400px;     /* largura máxima */
+  margin: 40px auto;     /* centraliza igual à Home */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+
+  padding: 0 200px;      /* igual Home para evitar corte lateral */
+}
+
+/* CARD (⚠️ usado apenas se Ofertas tiver cards próprios — mas geralmente usa ProductCard) */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGEM */
+.img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* TÍTULO */
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* PREÇOS */
+.oldPrice {
+  color: #777;
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+
+.newPrice {
+  color: #008000;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* BOTÃO COMPRAR */
+.btn {
+  background: #ff9900;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 12px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #e68900;
+}
